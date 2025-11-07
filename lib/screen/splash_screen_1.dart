@@ -81,14 +81,43 @@ class SplashScreen1 extends StatelessWidget {
                     //   MaterialPageRoute(builder: (context) => SplashScreen2()),
                     // );
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 50.0,
-                      vertical: 15.0,
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                      Colors.deepPurple,
                     ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+                    elevation: MaterialStateProperty.resolveWith<double>((
+                      states,
+                    ) {
+                      return states.contains(MaterialState.pressed) ? 2.0 : 8.0;
+                    }),
+                    padding: MaterialStateProperty.resolveWith<EdgeInsetsGeometry>((
+                      states,
+                    ) {
+                      // slightly reduce vertical padding when pressed to give "pressed-in" look
+                      return states.contains(MaterialState.pressed)
+                          ? EdgeInsets.symmetric(
+                              horizontal: 50.0,
+                              vertical: 12.0,
+                            )
+                          : EdgeInsets.symmetric(
+                              horizontal: 50.0,
+                              vertical: 15.0,
+                            );
+                    }),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                    ),
+                    overlayColor: MaterialStateProperty.resolveWith<Color?>((
+                      states,
+                    ) {
+                      if (states.contains(MaterialState.pressed))
+                        return Colors.black.withOpacity(0.12);
+                      return null;
+                    }),
+                    shadowColor: MaterialStateProperty.all(
+                      Colors.deepPurpleAccent,
                     ),
                   ),
                   child: Text(
