@@ -11,6 +11,7 @@ class SplashScreen1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Spacer(),
             SizedBox(height: 50),
             Container(
               width: 250,
@@ -26,6 +27,11 @@ class SplashScreen1 extends StatelessWidget {
             ),
             //tambahkan disini untuk widget widget lainnya nanti
             SizedBox(height: 30),
+            Text(
+              'Welcome',
+              style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20),
           ],
         ),
       ),
