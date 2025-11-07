@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kb1179_1123150117_uts/main.dart';
 import 'package:kb1179_1123150117_uts/screen/splash_screen_3.dart';
 
-class SplashScreen2 extends StatelessWidget {
-  const SplashScreen2({super.key});
+class SplashScreen3 extends StatelessWidget {
+  const SplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class SplashScreen2 extends StatelessWidget {
                 color: Colors.deepPurple,
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/images/image2.png'),
+                  image: AssetImage('assets/images/image3.png'),
                 ),
               ),
             ),
@@ -56,7 +56,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.deepPurple,
+                    color: Colors.grey,
                   ),
                 ),
                 SizedBox(width: 10),
@@ -65,7 +65,7 @@ class SplashScreen2 extends StatelessWidget {
                   height: 12,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Colors.grey,
+                    color: Colors.deepPurple,
                   ),
                 ),
               ],
@@ -80,7 +80,7 @@ class SplashScreen2 extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SplashScreen3()),
+                      MaterialPageRoute(builder: (context) => Login()),
                     );
                   },
                   style: ButtonStyle(
