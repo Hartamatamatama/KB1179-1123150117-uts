@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kb1179_1123150117_uts/main.dart';
-import 'package:kb1179_1123150117_uts/screen/splash_screen_1.dart';
+import 'package:kb1179_1123150117_uts/screen/login.dart';
 
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3({super.key});
@@ -80,7 +80,7 @@ class SplashScreen3 extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SplashScreen1()),
+                      MaterialPageRoute(builder: (context) => LoginScreen()),
                     );
                   },
                   style: ButtonStyle(
