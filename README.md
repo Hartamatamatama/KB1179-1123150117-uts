@@ -35,13 +35,7 @@ Aplikasi ini menggunakan tema **Material Design 3** dengan skema warna yang kons
 
 <div align="center">
   <img src="splash_screen_1.png" alt="Splash Screen" width="250">
-</div>
-
-<div align="center">
   <img src="splash_screen_2.png" alt="Splash Screen" width="250">
-</div>
-
-<div align="center">
   <img src="splash_screen_3.png" alt="Splash Screen" width="250">
 </div>
 
