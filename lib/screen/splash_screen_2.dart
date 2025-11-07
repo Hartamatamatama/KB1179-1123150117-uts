@@ -32,6 +32,103 @@ class SplashScreen2 extends StatelessWidget {
               style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 20),
+            Text(
+              textAlign: TextAlign.center,
+              'Don\'t worry! we got your cover. Use Wallie instead of cash!',
+              style: TextStyle(fontSize: 20, color: Colors.grey[700]),
+            ),
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.deepPurple,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.grey,
+                  ),
+                ),
+                SizedBox(width: 10),
+                Container(
+                  width: 12,
+                  height: 12,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.grey,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 50),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 40),
+              child: SizedBox(
+                height: 50,
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => SplashScreen2()),
+                    // );
+                  },
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                      Colors.deepPurple,
+                    ),
+                    elevation: MaterialStateProperty.resolveWith<double>((
+                      states,
+                    ) {
+                      return states.contains(MaterialState.pressed) ? 2.0 : 8.0;
+                    }),
+                    padding: MaterialStateProperty.resolveWith<EdgeInsetsGeometry>((
+                      states,
+                    ) {
+                      // slightly reduce vertical padding when pressed to give "pressed-in" look
+                      return states.contains(MaterialState.pressed)
+                          ? EdgeInsets.symmetric(
+                              horizontal: 50.0,
+                              vertical: 12.0,
+                            )
+                          : EdgeInsets.symmetric(
+                              horizontal: 50.0,
+                              vertical: 15.0,
+                            );
+                    }),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                    ),
+                    overlayColor: MaterialStateProperty.resolveWith<Color?>((
+                      states,
+                    ) {
+                      if (states.contains(MaterialState.pressed))
+                        return Colors.black.withOpacity(0.12);
+                      return null;
+                    }),
+                    shadowColor: MaterialStateProperty.all(
+                      Colors.deepPurpleAccent,
+                    ),
+                  ),
+                  child: Text(
+                    'Continue',
+                    style: TextStyle(fontSize: 18.0, color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 70),
           ],
         ),
       ),
