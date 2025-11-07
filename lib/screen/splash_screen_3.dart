@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kb1179_1123150117_uts/main.dart';
-import 'package:kb1179_1123150117_uts/screen/splash_screen_3.dart';
+import 'package:kb1179_1123150117_uts/screen/splash_screen_1.dart';
 
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3({super.key});
@@ -35,7 +35,7 @@ class SplashScreen3 extends StatelessWidget {
             SizedBox(height: 20),
             Text(
               textAlign: TextAlign.center,
-              'Don\'t worry! we got your cover. Use Wallie instead of cash!',
+              'Let\'s Try Wallie now ! And get the best solution!',
               style: TextStyle(fontSize: 20, color: Colors.grey[700]),
             ),
             SizedBox(height: 50),
@@ -80,7 +80,7 @@ class SplashScreen3 extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Login()),
+                      MaterialPageRoute(builder: (context) => SplashScreen1()),
                     );
                   },
                   style: ButtonStyle(
