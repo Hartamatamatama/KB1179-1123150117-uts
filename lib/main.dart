@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
       title: '1123150117, Farhan Raisprawira Hartama',
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.deepPurple,
+        ), //Nim belakang 7 jadi terpilih DeepPurple
       ),
     );
   }
