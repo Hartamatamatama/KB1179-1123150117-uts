@@ -123,7 +123,7 @@ class SplashScreen3 extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    'Continue',
+                    'Get Started',
                     style: TextStyle(fontSize: 18.0, color: Colors.white),
                   ),
                 ),

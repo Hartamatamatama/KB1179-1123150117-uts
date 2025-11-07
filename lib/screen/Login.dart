@@ -22,6 +22,11 @@ class LoginScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 10),
+                Text(
+                  'Silahkan login untuk melanjutkan',
+                  style: TextStyle(fontSize: 15, color: Colors.deepPurple),
+                ),
+                SizedBox(height: 50),
               ],
             ),
           ),
