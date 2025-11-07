@@ -17,6 +17,11 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(height: 10),
                 Icon(Icons.lock_outlined, size: 80, color: Colors.deepPurple),
                 SizedBox(height: 10),
+                Text(
+                  'Selamat Datang',
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+                SizedBox(height: 10),
               ],
             ),
           ),
