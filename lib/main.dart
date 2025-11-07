@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screen/splash_screen_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
           seedColor: Colors.deepPurple,
         ), //Nim belakang 7 jadi terpilih DeepPurple
       ),
+      home: const SplashScreen1(),
     );
   }
 }
