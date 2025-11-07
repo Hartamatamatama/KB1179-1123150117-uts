@@ -1,14 +1,11 @@
 # 📱 UTS Mobile Apps - Aplikasi Flutter 
-
-<div align="center">
-  <img src="screenshots/app_logo.png" alt="App Logo" width="120" height="120">
   
-  ### 🎯 **Ujian Tengah Semester - Pemrograman Mobile**
+  ### 🎯 **Ujian Tengah Semester - Mobile Apps**
   
   **Dibuat oleh: Farhan Raisprawira Hartama**  
   **NIM: 1123150117**  
   **Kelas: KB1179**  
-  **Semester: Ganjil 2024/2025**
+  **Semester: Ganjil 2025/2026**
   
   [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
   [![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
@@ -37,7 +34,15 @@ Aplikasi ini menggunakan tema **Material Design 3** dengan skema warna yang kons
 - **Brand Identity**: Menampilkan identitas aplikasi dengan design yang menarik
 
 <div align="center">
-  <img src="screenshots/splash_screen.png" alt="Splash Screen" width="250">
+  <img src="splash_screen_1.png" alt="Splash Screen" width="250">
+</div>
+
+<div align="center">
+  <img src="splash_screen_2.png" alt="Splash Screen" width="250">
+</div>
+
+<div align="center">
+  <img src="splash_screen_3.png" alt="Splash Screen" width="250">
 </div>
 
 ### 🔐 **2. Halaman Login**
@@ -48,7 +53,7 @@ Aplikasi ini menggunakan tema **Material Design 3** dengan skema warna yang kons
 - **Remember Me**: Opsi untuk mengingat kredensial login
 
 <div align="center">
-  <img src="screenshots/login_screen.png" alt="Login Screen" width="250">
+  <img src="login_screen.png" alt="Login Screen" width="250">
 </div>
 
 **Fitur Detail Login:**
